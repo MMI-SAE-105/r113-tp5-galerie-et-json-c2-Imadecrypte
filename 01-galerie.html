@@ -8,8 +8,8 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body x-data="{imageAffichee: 'https://picsum.photos/id/237/400/300'}">
-    <h1>Galerie</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non purus id urna lacinia laoreet. Integer consectetur sapien in dolor faucibus varius. Suspendisse tellus mauris, rhoncus sit amet erat sed, facilisis imperdiet purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur sodales vel sem vitae fringilla. Fusce vitae urna at enim sagittis mollis eget non urna. Aliquam mattis est interdum quam faucibus efficitur. Nam pretium ex ut dui facilisis, id dignissim sem lacinia. Integer at lectus felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc efficitur interdum eros. Etiam vel erat molestie, tempor erat in, laoreet justo. </p>
+    <h1 class="style_texte">Galerie</h1>
+    <p class="style_texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non purus id urna lacinia laoreet. Integer consectetur sapien in dolor faucibus varius. Suspendisse tellus mauris, rhoncus sit amet erat sed, facilisis imperdiet purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur sodales vel sem vitae fringilla. Fusce vitae urna at enim sagittis mollis eget non urna. Aliquam mattis est interdum quam faucibus efficitur. Nam pretium ex ut dui facilisis, id dignissim sem lacinia. Integer at lectus felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc efficitur interdum eros. Etiam vel erat molestie, tempor erat in, laoreet justo. </p>
     <div class="overlay" 
         x-show="imageAffichee"
         @click="imageAffichee = null"
