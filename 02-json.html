@@ -8,25 +8,10 @@
 <body>
     <h1>JSON</h1>
     <ul x-data="{
-        données: [
-    {
-        nom: 'nail',
-        projet: 'Alpine.js',
-        url: 'https://alpinejs.dev/'
-    },
-    {
-        nom: 'vincent',
-        projet: 'Tailwind CSS',
-        url: 'https://tailwindcss.com/''
-    },
-    {
-        nom: 'adrien',
-        projet: 'Laravel',
-        url: 'https://laravel.com/''
-    }
-    }
-    ">
-
-    </ul>
+        async données() {
+            const resp = await fetch('data.json');
+            return await resp.json();
+            },
+        }">
 </body>
 </html>
